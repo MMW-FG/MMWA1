@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<PropertyList>
+  <path>MMWA1.ac</path>
+<!-- ========== Effects ========= -->
+<effect>
+ <inherits-from>Effects/glass</inherits-from>
+ <object-name>Windows</object-name>
+</effect>
+<effect>
+    <inherits-from>Aircraft/MMWA1/Models/Effects/body</inherits-from>
+    <object-name>A1-Body</object-name>
+  </effect>
+
+<!-- STEERINGWHEEL -->
+
+<animation>  
+ <type>rotate</type>  
+ <object-name>Steering</object-name>
+<object-name>horn</object-name>
+<object-name>Column</object-name>
+ <property>surface-positions/rudder-pos-norm</property>
+ <factor>40</factor>
+ <axis>
+  <x1-m>-0.26956</x1-m>
+  <y1-m>-0.31078</y1-m>
+  <z1-m>0.05135</z1-m>
+  <x2-m>-0.28007</x2-m>
+  <y2-m>-0.31079</y2-m>
+  <z2-m>0.03972</z2-m>
+ </axis>
+</animation>
+
+<!--GEAR-->
+
+<!--Wheel steer animation-->
+    <animation>
+    <type>rotate</type>
+    <object-name>fwheel</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>4</factor>
+    <center>
+      <x-m> -1.13613 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> -0.65839</z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+<!-- Wheel roll animation-->
+  <animation>
+    <type>spin</type>
+    <object-name>fwheel</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 10 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  <center>
+      <x-m> -1.13613 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> -0.65839</z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>rwheel</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 10 </factor>
+  <center>
+      <x-m> 0.83747 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> -0.5646 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+<!-- Braking lights-->  
+<animation>
+ <type>material</type>
+ <object-name>Brakes</object-name>
+<emission>
+  <red>1.0</red>
+  <green>1.0</green>
+  <blue>1.0</blue>
+  <factor-prop>sim/multiplay/generic/float[1]</factor-prop>
+ </emission>
+</animation>
+
+<!-- Startup --> 
+<animation>
+ <type>material</type>
+ <object-name>Headlamp</object-name>
+ <emission>
+  <red>1.0</red>
+  <green>1.0</green>
+  <blue>1.0</blue>
+  <factor-prop>sim/multiplay/generic/int[4]</factor-prop>
+ </emission>
+</animation>
+
+<animation>
+ <type>material</type>
+ <object-name>Windows</object-name>
+ <emission>
+  <red>0.0</red>
+  <green>1.0</green>
+  <blue>4.0</blue>
+  <factor-prop>sim/multiplay/generic/int[4]</factor-prop>
+ </emission>
+</animation>
+    </PropertyList>

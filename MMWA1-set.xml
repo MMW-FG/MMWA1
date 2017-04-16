@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim>
+
+       <description>MMW A1</description>
+    <author>Ausdkunst ... (see README file)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">MMW-yasim</aero>
+
+    <startup>
+      <splash-texture>Aircraft/MMWA1/splash.png</splash-texture>
+    </startup>
+
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   3 </model>
+    </rating>
+ <view>
+   <internal archive="y">true</internal>
+   <config>
+     <x-offset-m archive="y">-0.34368</x-offset-m><!--blender y-->
+     <y-offset-m archive="y">0.45601</y-offset-m><!-- blender z-->
+     <z-offset-m archive="y">0.41264</z-offset-m><!-- blender x -->
+     <pitch-offset-deg>-15</pitch-offset-deg>
+   </config>
+  </view>
+     <view n="103">
+    <name>Copilot View</name>
+    <type>lookfrom</type>
+    <internal type="bool">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+     <x-offset-m archive="y">0.34368</x-offset-m><!--blender y-->
+     <y-offset-m archive="y">0.45601</y-offset-m><!-- blender z-->
+     <z-offset-m archive="y">0.41264</z-offset-m><!-- blender x -->
+     <pitch-offset-deg>-15</pitch-offset-deg>
+   </config>
+  </view>
+  
+ <sound>
+      <path archive="y">Sounds/MMW-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Models/MMWA1.xml</path>
+    </model>
+
+    <flaps>
+      <setting> 0.00 </setting>
+      <setting> 0.25 </setting> <!-- 15 deg -->
+      <setting> 0.7 </setting> <!-- 60 deg -->
+    </flaps>
+
+    <multiplay>
+      <generic> 
+      <float n="1" alias="/controls/gear/brake-parking"/>
+       <int n="0" alias="/gear/gear[0]/wow"/>
+	    <int n="1" alias="/gear/gear[1]/wow"/>
+	    <int n="2" alias="/gear/gear[2]/wow"/>
+	    <int n="3" alias="/gear/gear[3]/wow"/>
+	<int n="4" alias="/engines/engine[0]/running"/>
+      </generic>
+    </multiplay>
+   
+
+    <weight n="0">
+        <name>Pilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>100</min-lb>
+    </weight>
+
+    <weight n="1">
+        <name>Copilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+        <name>Pax</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="3">
+        <name>Cargo</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+  </sim>
+<instrumentation>
+<gnc255a><comm-mode>1</comm-mode></gnc255a>
+<nav-radio>
+  <name>nav</name>
+  <number>0</number>
+</nav-radio>
+
+<nav-radio>
+  <name>nav</name>
+  <number>1</number>
+</nav-radio>
+
+<transponder>
+  <name>transponder</name>
+  <number>0</number>
+  <mode-c-altitude>/instrumentation/encoder/mode-c-alt-ft</mode-c-altitude>
+</transponder>
+</instrumentation>
+
+<controls>
+<gear>
+
+<brake-parking>1</brake-parking></gear>
+    <lighting>
+      <instrument-lights type="bool">0</instrument-lights>
+      <nav-lights type="bool">0</nav-lights>
+      <strobe type="bool">0</strobe>
+      <landing-lights type="bool">0</landing-lights>
+      <taxi-lights type="bool">0</taxi-lights>
+      <luminosite-lights type="float">0.8</luminosite-lights>
+      <panel-dim type="float">0.5</panel-dim>
+    </lighting>
+ <electric>
+      <battery-switch>0</battery-switch>
+</electric>
+</controls>
+<input>
+ <keyboard>
+  <key n="127">
+   <name>Delete</name>
+   <desc>Toggle Reversers</desc>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[0]/reverser</property>
+   </binding>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[1]/reverser</property>
+   </binding>
+  </key>
+ </keyboard>
+</input>
+  <nasal>
+<MMWA1>
+<file>Nasal/immat.nas</file>
+<file>Nasal/fuel-cell.nas</file>
+<file>Nasal/Electrical.nas</file>
+</MMWA1>
+  </nasal>
+
+
+
+
+
+</PropertyList>
+
