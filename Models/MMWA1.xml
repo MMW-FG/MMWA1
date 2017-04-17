@@ -6,10 +6,6 @@
  <inherits-from>Effects/glass</inherits-from>
  <object-name>Windows</object-name>
 </effect>
-<effect>
-    <inherits-from>Aircraft/MMWA1/Models/Effects/body</inherits-from>
-    <object-name>A1-Body</object-name>
-  </effect>
 
 <!-- STEERINGWHEEL -->
 
