@@ -43,7 +43,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     <engine>
       <name>engine</name>
       <mode>looped</mode>
-      <path>ea2015-engine.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-engine.wav</path>
       <condition>
         <and>
           <greater-than>
@@ -81,7 +81,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     <engine-internal>
       <name>engine-internal</name>
       <mode>looped</mode>
-      <path>ea2015-engine-internal.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-engine-internal.wav</path>
       <condition>
         <and>
           <greater-than>
@@ -113,7 +113,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     </engine-internal>
 <stop>
     <name>stop</name>
-    <path>ea2015-engine-shutdown.wav</path>
+    <path>Aircraft/MMWsounds/ea2015-engine-shutdown.wav</path>
     <condition>
       <not>
             <property>/engines/engine/running</property>
@@ -135,7 +135,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     <propeller>
       <name>propeller</name>
       <mode>looped</mode>
-      <path>ea2015-prop.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-prop.wav</path>
       <condition>
         <greater-than>
           <property>engines/engine/rpm</property>
@@ -239,7 +239,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
    <!-- <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
-      <path>ea2015-flaps.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-flaps.wav</path>
       <property>surface-positions/flap-pos-norm</property>
       <volume>
         <factor>5</factor>
@@ -251,7 +251,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     <stall>
       <name>stall</name>
       <mode>looped</mode>
-      <path>ea2015-stall.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-stall.wav</path>
       <condition>
         <and>
           <property>controls/electric/battery-switch</property>
@@ -277,7 +277,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
      <click>
       <name>Clickon</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>sim/model/click</property>
       </condition>
@@ -288,7 +288,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
      <click>
       <name>Clickoff</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not><property>sim/model/click</property></not>
       </condition>
@@ -299,7 +299,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     
      <click>
       <name>Prise casque On</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>sim/sound/chatter/enabled</property>
       </condition>
@@ -310,7 +310,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Prise caqsue Off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>sim/sound/chatter/enabled</property>
@@ -323,7 +323,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     
      <click>
       <name>Garmin 196 on</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>instrumentation/garmin196/status</property>
       </condition>
@@ -334,7 +334,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     
     <click>
       <name>Garmin 196 off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
            <not>
         <property>instrumentation/garmin196/status</property>
@@ -347,7 +347,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     
     <click>
       <name>Battery on</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>controls/electric/battery-switch</property>
       </condition>
@@ -358,7 +358,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Battery off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>controls/electric/battery-switch</property>
@@ -371,7 +371,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     
     <click>
       <name>Alternator on</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>/controls/engines/engine/master-alt</property>
       </condition>
@@ -382,7 +382,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Alternator off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>/controls/engines/engine/master-alt</property>
@@ -395,7 +395,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Fuel Pump on</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>controls/fuel/tank/boost-pump</property>
       </condition>
@@ -406,7 +406,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Fuel Pump off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>controls/fuel/tank/boost-pump</property>
@@ -419,7 +419,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Taxi Light On</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>sim/model/lights/taxi-lights</property>
       </condition>
@@ -430,7 +430,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Taxi Light Off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>sim/model/lights/taxi-lights</property>
@@ -443,7 +443,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Landing Light On</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>sim/model/lights/landing-lights</property>
       </condition>
@@ -454,7 +454,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Landing Light Off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>sim/model/lights/landing-lights</property>
@@ -467,7 +467,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Nav Light On</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>sim/model/lights/nav-lights</property>
       </condition>
@@ -478,7 +478,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Nav Light Off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>sim/model/lights/nav-lights</property>
@@ -491,7 +491,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Strobe Lights On</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>sim/model/lights/strobe-lights</property>
       </condition>
@@ -502,7 +502,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Strobe Lights Off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>sim/model/lights/strobe-lights</property>
@@ -515,7 +515,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Turn and Bank On</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>instrumentation/turn-indicator/serviceable</property>
       </condition>
@@ -526,7 +526,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Turn and Bank Off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>instrumentation/turn-indicator/serviceable</property>
@@ -539,7 +539,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 <!--
     <click>
       <name>Flashing Beacon On</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>controls/switches/flashing-beacon</property>
       </condition>
@@ -550,7 +550,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Flashing Beacon Off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>controls/switches/flashing-beacon</property>
@@ -563,7 +563,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 -->
     <click>
       <name>Pitot Heat On</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>controls/anti-ice/pitot-heat</property>
       </condition>
@@ -574,7 +574,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Pitot Heat Off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>controls/anti-ice/pitot-heat</property>
@@ -648,7 +648,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Avionics Master On</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <property>controls/switches/master-avionics</property>
       </condition>
@@ -659,7 +659,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>Avionics Master Off</name>
-      <path>ea2015-click.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-click.wav</path>
       <condition>
         <not>
           <property>controls/switches/master-avionics</property>
@@ -674,7 +674,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
      <!-- Vanne fuel -->
    <click>
      <name> fuel on </name>
-     <path>ea2015-tirette.wav</path>
+     <path>Aircraft/MMWsounds/ea2015-tirette.wav</path>
      <condition>
        <property>controls/fuel/tank/to_engine</property>
      </condition>
@@ -687,7 +687,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
    <click>
       <name> fuel off </name>
-      <path>ea2015-tirette.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-tirette.wav</path>
        <condition>
          <not>
              <property>controls/fuel/tank/to_engine</property>
@@ -703,7 +703,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
  <!-- Anti ice -->
      <click>
       <name>anti-ice on</name>
-      <path>ea2015-tirette.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-tirette.wav</path>
        <condition>
           <property>controls/anti-ice/engine/carb-heat</property>
     </condition>    
@@ -716,7 +716,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
  <click>
       <name>anti-ice off</name>
-      <path>ea2015-tirette.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-tirette.wav</path>
        <condition>
          <not>
              <property>controls/anti-ice/engine/carb-heat</property>
@@ -732,7 +732,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     <!-- Frein parc -->
      <click>
       <name>frein parc on</name>
-      <path>ea2015-tirette.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-tirette.wav</path>
        <condition>
           <property>controls/gear/brake-parking</property>
     </condition>    
@@ -745,7 +745,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
 
     <click>
       <name>frein parc off</name>
-      <path>ea2015-tirette.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-tirette.wav</path>
        <condition>
          <not>
              <property>controls/gear/brake-parking</property>
@@ -761,7 +761,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     <!-- Tirettes chauffage -->
      <click>
       <name>chauffage on</name>
-      <path>ea2015-tirette.wav</path>
+      <path>Aircraft/MMWsounds/ea2015-tirette.wav</path>
        <condition>
           <property>controls/pressurization/outflow-valve</property>
     </condition>    
@@ -773,7 +773,7 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
     </click>
 
     <click>
-      <name>chauffage off</name>
+      <name>Aircraft/MMWsounds/chauffage off</name>
       <path>ea2015-tirette.wav</path>
       <condition>
         <not>
@@ -810,6 +810,56 @@ August/September 2015 : Updated by D-ECHO to fit Traveller
         <factor>0.1</factor>
       </volume>
     </squish>
+<announcement>
+<name>welcome</name>
+ <path>Aircraft/MMWsounds/Welcome.wav</path>
+ <condition>
+  <property>sim/sound/welcome</property>
+ </condition>
+        <volume>
+            <factor>300</factor>
+        </volume>
+</announcement>
+<announcement>
+<name>safety</name>
+ <path>Aircraft/MMWsounds/Safety.wav</path>
+ <condition>
+  <property>sim/sound/safety</property>
+ </condition>
+        <volume>
+            <factor>300</factor>
+        </volume>
+</announcement>
+<announcement>
+<name>seatbeltoff</name>
+ <path>Aircraft/MMWsounds/seatbeltoff.wav</path>
+ <condition>
+  <property>sim/sound/seatbeltoff</property>
+ </condition>
+        <volume>
+            <factor>300</factor>
+        </volume>
+</announcement>
+<announcement>
+<name>descent</name>
+ <path>Aircraft/MMWsounds/descent.wav</path>
+ <condition>
+  <property>sim/sound/descent</property>
+ </condition>
+        <volume>
+            <factor>300</factor>
+        </volume>
+</announcement>
+<announcement>
+<name>touchdown</name>
+ <path>Aircraft/MMWsounds/touchdown.wav</path>
+ <condition>
+  <property>sim/sound/touchdown</property>
+ </condition>
+        <volume>
+            <factor>300</factor>
+        </volume>
+</announcement>
 
   </fx>
 

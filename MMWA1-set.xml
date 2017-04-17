@@ -45,7 +45,25 @@
  <sound>
       <path archive="y">Sounds/MMW-sound.xml</path>
     </sound>
-
+<menubar>
+		<default>
+		<menu n="10">
+			<label>MMW</label>
+			<enabled type="bool">true</enabled>
+			<item>
+			<name>Announcement</name>
+			<label>Announcement</label>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 var announcement = gui.Dialog.new("sim/gui/dialogs/announcement/dialog", "Aircraft/MMWA1/Sounds/MMW-announcement.xml");
+				 announcement.open();
+				</script>
+			</binding>
+		</item>
+		</menu>
+		</default>
+	</menubar>
     <model>
       <path archive="y">Models/MMWA1.xml</path>
     </model>
