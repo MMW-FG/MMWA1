@@ -42,6 +42,10 @@
    </config>
   </view>
   
+<help>
+<text> Welcome to Melbourne Motor Works Aircraft.  To start the engine, first press } three times before pressing s.
+</text>
+</help>
  <sound>
       <path archive="y">Sounds/MMW-sound.xml</path>
     </sound>
@@ -138,15 +142,6 @@
 <gear>
 
 <brake-parking>1</brake-parking></gear>
-    <lighting>
-      <instrument-lights type="bool">0</instrument-lights>
-      <nav-lights type="bool">0</nav-lights>
-      <strobe type="bool">0</strobe>
-      <landing-lights type="bool">0</landing-lights>
-      <taxi-lights type="bool">0</taxi-lights>
-      <luminosite-lights type="float">0.8</luminosite-lights>
-      <panel-dim type="float">0.5</panel-dim>
-    </lighting>
  <electric>
       <battery-switch>0</battery-switch>
 </electric>
@@ -169,7 +164,6 @@
 </input>
   <nasal>
 <MMWA1>
-<file>Nasal/immat.nas</file>
 <file>Nasal/fuel-cell.nas</file>
 <file>Nasal/Electrical.nas</file>
 </MMWA1>

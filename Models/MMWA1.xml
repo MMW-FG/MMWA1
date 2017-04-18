@@ -93,6 +93,24 @@
  </emission>
 </animation>
 
+<!-- Nav Lights --> 
+<model>
+    <path>light/RedLight.xml</path>
+    <offsets>
+      <x-m>0.20634 </x-m>
+      <y-m> -2.72818</y-m>
+      <z-m> 0.06379 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>light/GreenLight.xml</path>
+    <offsets>
+      <x-m>0.20634 </x-m>
+      <y-m> 2.72818</y-m>
+      <z-m> 0.06379 </z-m>
+    </offsets>
+  </model>
+
 <!-- Startup --> 
 <animation>
  <type>material</type>
