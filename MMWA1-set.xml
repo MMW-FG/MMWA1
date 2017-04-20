@@ -119,25 +119,6 @@
     </weight>
 
   </sim>
-<instrumentation>
-<gnc255a><comm-mode>1</comm-mode></gnc255a>
-<nav-radio>
-  <name>nav</name>
-  <number>0</number>
-</nav-radio>
-
-<nav-radio>
-  <name>nav</name>
-  <number>1</number>
-</nav-radio>
-
-<transponder>
-  <name>transponder</name>
-  <number>0</number>
-  <mode-c-altitude>/instrumentation/encoder/mode-c-alt-ft</mode-c-altitude>
-</transponder>
-</instrumentation>
-
 <controls>
 <gear>
 
@@ -146,22 +127,6 @@
       <battery-switch>0</battery-switch>
 </electric>
 </controls>
-<input>
- <keyboard>
-  <key n="127">
-   <name>Delete</name>
-   <desc>Toggle Reversers</desc>
-   <binding>
-    <command>property-toggle</command>
-    <property>controls/engines/engine[0]/reverser</property>
-   </binding>
-   <binding>
-    <command>property-toggle</command>
-    <property>controls/engines/engine[1]/reverser</property>
-   </binding>
-  </key>
- </keyboard>
-</input>
   <nasal>
 <MMWA1>
 <file>Nasal/fuel-cell.nas</file>

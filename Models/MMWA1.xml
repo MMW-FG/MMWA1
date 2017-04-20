@@ -12,8 +12,6 @@
 <animation>  
  <type>rotate</type>  
  <object-name>Steering</object-name>
-<object-name>horn</object-name>
-<object-name>Column</object-name>
  <property>surface-positions/rudder-pos-norm</property>
  <factor>40</factor>
  <axis>
